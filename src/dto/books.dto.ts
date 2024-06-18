@@ -28,7 +28,7 @@ export class BookDTO {
 
   @ApiProperty({
     description: 'Nome do autor do livro',
-    example: '[{ "name": "Júlio", "surname": "Verne"  }]'
+    type: [AuthorDTO],
   })
   @IsNotEmpty()
   @Type(() => AuthorDTO)
